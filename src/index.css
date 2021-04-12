@@ -11,3 +11,60 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* from main.css */
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Patua One", serif;
+  letter-spacing: 2px;
+}
+
+.container {
+display: flex;
+flex-direction: column;
+}
+
+/* from footer.css */
+
+.pageFooter {
+  order: 2;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* from journalEntries */
+/* .entryContainer {
+    display: flex, 
+} */
+
+.journalEntry {
+  background-color: rgb(103, 241, 207);
+  margin: 1em;
+  padding: .5em;
+}
+
+.postHeader {
+  display: flex;
+  width: 65%;
+  justify-content: space-between;
+  margin: .2em 0 .5em .3em;
+}
+
+.postContent {
+  margin: 0 0 .2em .5em
+}
+
+/* from form */
+.entry__field {
+  display: flex;
+  flex-direction: column;
+  border: 0px
+}
+
+.journalForm {
+  width: 50%;
+  margin: 0 auto;
+}
