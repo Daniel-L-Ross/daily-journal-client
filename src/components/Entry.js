@@ -8,11 +8,13 @@ export const Entry = ({ entry, moods }) => {
 
   return (
 
-    <section className="entry">
-      <div className="entry__concept">{entry.concept}</div>
-      <div className="entry__entry">{entry.entry}</div>
-      <div className="entry__date">{entry.date}</div>
-      <div className="entry__mood">{mood.label}</div>
+    <section className="journal__entry">
+      <div className="post__Header">
+        <div className="entry__concept">{entry.concept}</div>
+        <div className="entry__date">{entry.date}</div>
+        <div className="entry__mood">{mood.label}</div>
+      </div>
+        <div className="entry__entry">{entry.entry}</div>
 
       <button onClick={
         () => {

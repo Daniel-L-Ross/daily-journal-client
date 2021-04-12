@@ -58,7 +58,7 @@ export const EntryForm = (props) => {
     return (
         <form className="EntryForm">
             <h2 className="EntryForm__title">{editMode ? "Update Entry" : "Create Entry"}</h2>
-            <fieldset>
+            <fieldset className="entry__field">
                 <div className="form-group">
                     <label htmlFor="concept">Concept: </label>
                     <input type="text" name="concept" required autoFocus className="form-control"
@@ -69,7 +69,7 @@ export const EntryForm = (props) => {
                     />
                 </div>
             </fieldset>
-            <fieldset>
+            <fieldset className="entry__field">
                 <div className="form-group">
                     <label htmlFor="entry">Entry: </label>
                     <input type="text" name="entry" required className="form-control"
@@ -80,7 +80,7 @@ export const EntryForm = (props) => {
                     />
                 </div>
             </fieldset>
-            <fieldset>
+            <fieldset className="entry__field">
                 <div className="form-group">
                     <label htmlFor="moodId">Mood: </label>
                     <select name="moodId" className="form-control"
