@@ -11,7 +11,12 @@ export const EntryContext = React.createContext();
  */
 export const EntryProvider = props => {
   const [entries, setEntries] = useState([]);
-  const [entry, setEntry] = useState({})
+  const [entry, setEntry] = useState({
+          date: "", 
+          concept: "",
+          entry: "",
+          mood_id: 0
+  })
 
   const getEntries = () => {
     return fetch("http://localhost:8088/entries")

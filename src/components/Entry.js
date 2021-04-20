@@ -1,10 +1,11 @@
 import React, { useContext } from "react";
 import { EntryContext } from "./EntryProvider";
 
-export const Entry = ({ entry, moods }) => {
+export const Entry = ({ entry }) => {
 
-  const mood = moods.find(m => m.id === entry.moodId)
-  const { deleteEntry, getEntryById } = useContext(EntryContext)
+  const { deleteEntry, getEntryById, setEntry } = useContext(EntryContext)
+
+
 
   return (
 
@@ -12,7 +13,7 @@ export const Entry = ({ entry, moods }) => {
       <div className="entry__concept">{entry.concept}</div>
       <div className="entry__entry">{entry.entry}</div>
       <div className="entry__date">{entry.date}</div>
-      <div className="entry__mood">{mood.label}</div>
+      <div className="entry__mood">{entry.mood.label}</div>
 
       <button onClick={
         () => {
