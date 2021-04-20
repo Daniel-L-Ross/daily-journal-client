@@ -3,7 +3,9 @@ import { EntryContext } from "./EntryProvider";
 
 export const Entry = ({ entry }) => {
 
-  const { deleteEntry, getEntryById } = useContext(EntryContext)
+  const { deleteEntry, getEntryById, setEntry } = useContext(EntryContext)
+
+
 
   return (
 
