@@ -120,7 +120,7 @@ export const EntryForm = (props) => {
                         <>
                             <label htmlFor={tag.name}>{tag.name}</label>
                             <input name="tag" type="checkbox" id={tag.id}
-                                checked={entry.tags?.includes(tag.id)}
+                                checked={entry.tag.includes(tag.id)}
                                 value={tag.id}
                                 onChange={handleControlledInputChange}
                             />
