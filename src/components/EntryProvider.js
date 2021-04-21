@@ -15,6 +15,7 @@ export const EntryProvider = props => {
           date: "", 
           concept: "",
           entry: "",
+          tag: [],
           mood_id: 0
   })
 
